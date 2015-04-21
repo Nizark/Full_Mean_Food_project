@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src= "app.js"></script>
+    <script src="controller/front_controller.js"></script>
+    <script src="factory/factories.js"></script> 
+<style type="text/css">
+	*{
+		margin: 0 auto;
+	}
+	body{
+		background: url('3monkeys.jpeg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		text-align: center;
+		margin: 0;
+	}
+	#header{
+		margin: 27px auto;
+		/*margin: 27px 0px 98px 10px;*/
+		box-shadow: 2px 2px 0px gray;
+		width: 240px;
+	}
+	img{
+		/*margin-left: 40px;*/
+		width: 60px;
+		height: auto;
+	}
+	h1{
+		color: white;
+		font-size: 14px;
+	}
+	#login{
+	}
+	#reg{
+		margin-left: -160px;
+		color: white;
+	}
+	p{
+		color: white;
+		margin: 100px 0px 0px 0px;
+	}
+</style>
+  </head>
+  <body>
+    <div ng-app='myApp'>
+    	<div id="header">
+        	<a href="#/"><button>Home</button></a><a href="#/partial1"><button>Breakfast</button></a><a href="#/partial2"><button>Lunch</button></a><a href="#/partial3"><button>Weekly</button></a>
+        </div> 
+        <div ng-view="">
+        </div>
+    </div>
+  </body>
+</html>
